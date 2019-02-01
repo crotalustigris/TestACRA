@@ -7,9 +7,11 @@ import android.util.Log;
 import org.acra.ACRA;
 import org.acra.BuildConfig;
 import org.acra.annotation.AcraCore;
+import org.acra.annotation.AcraToast;
 
 @SuppressWarnings("WeakerAccess")
 @AcraCore(buildConfigClass = BuildConfig.class, stopServicesOnCrash = true)
+@AcraToast(resText = R.string.acra_toast_text)
 public class MyApp extends Application {
     public static final String TAG = "X.testacra";
 
